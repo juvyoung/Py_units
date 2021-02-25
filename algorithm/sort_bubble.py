@@ -105,7 +105,7 @@ def main():
     # unsorted = [ item for item in user_input.split(',')]
     
     # Create a arry with random numbers
-    unsorted = random_tl.random_int_list(-10000,10000, 1000)
+    unsorted = random_tl.random_int_list(-1000,1000, 1000)
     print( 'Random array is: \n{0}'.center(20).format(str(unsorted)) )
     
     print("\n".rjust(40, '-'))

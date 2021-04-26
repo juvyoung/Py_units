@@ -103,7 +103,29 @@ class api_np_cfunc(object):
             self.res.append( np.median([ src0[i], src1[i], src2[i]]) )
 
         return np.array(self.res)
-    
+        
+    def ms_transfer(self, src):
+        """
+        
+
+        Transfer km/h to m/s
+        ----------
+        src : nparray
+            (km/h) inputs.
+
+        Returns
+        -------
+        nparray
+            output (m/s).
+
+        """
+        self.res = []
+        
+        for i in range(len(src)):
+            self.res.append( src[i]*1000/3600 )
+            
+        return np.array(self.res)
+        
 '''
           Comments
 '''
